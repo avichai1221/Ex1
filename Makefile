@@ -4,7 +4,7 @@ OBJECTS_MAIN=main.o
 OBJECTS_POWER=power.o
 OBJECTS_basicMath=basicMath.o
 FLAGS= -Wall -g
-all: mymaths ‫‪mymathd‬‬ mains maind
+all: mymaths mymathd maind mains
 mains: $(OBJECTS_MAIN) libmyMath.a
 	$(CC) $(FLAGS) -o mains $(OBJECTS_MAIN) libmyMath.a
 maind: $(OBJECTS_MAIN) libmyMath.so
